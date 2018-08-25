@@ -10,7 +10,7 @@
 
 - 示例图：
 
-![](https://github.com/iOS-DeveloperTeam/NNFigure/blob/master/shareView/截屏.mov)
+![](https://github.com/iOS-DeveloperTeam/NNFigure/blob/master/shareView/截屏.gif)
 
 
 - demo：
