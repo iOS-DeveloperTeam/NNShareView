@@ -9,7 +9,7 @@
 #import "NNTestViewController.h"
 #import "NNShareView.h"
 
-@interface NNTestViewController ()
+@interface NNTestViewController ()<NNShareViewDelegate>
 
 @end
 
@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    self.navigationItem.title = @"截屏或点击屏幕";
+    self.navigationItem.title = @"点击屏幕试试";
 }
 
 - (void)shareButtonAction:(NSInteger)integer {
@@ -28,7 +28,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UIImage *image = [UIImage imageNamed:@"dog01"];
     NNShareView *shareviews = [[NNShareView alloc] initWithFrame:[UIScreen mainScreen].bounds screenshotImage:image];
-    [[[UIApplication sharedApplication] keyWindow] addSubview:shareviews];
+    shareviews.shareViewDelegate = self;
 }
 
 @end

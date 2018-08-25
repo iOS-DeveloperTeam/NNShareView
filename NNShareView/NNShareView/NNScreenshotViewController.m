@@ -33,7 +33,6 @@
     UIImage *image = [self imageWithScreenshot];
     NNShareView *shareviews = [[NNShareView alloc] initWithFrame:[UIScreen mainScreen].bounds screenshotImage:image];
     shareviews.shareViewDelegate = self;
-    [[[UIApplication sharedApplication]keyWindow] addSubview:shareviews];
 }
 
 - (void)shareButtonAction:(NSInteger)integer {

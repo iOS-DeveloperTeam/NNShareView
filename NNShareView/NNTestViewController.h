@@ -6,8 +6,8 @@
 //  Copyright © 2018年 刘朋坤. All rights reserved.
 //
 
-#import "NNScreenshotViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface NNTestViewController : NNScreenshotViewController
+@interface NNTestViewController : UIViewController
 
 @end

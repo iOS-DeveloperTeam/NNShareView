@@ -12,6 +12,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame screenshotImage:(UIImage *)screenshotImage {
     if (self = [super initWithFrame:frame]) {
+        [[[UIApplication sharedApplication] keyWindow] addSubview:self];
         // 动画
         [self animationDuration:0.8];
         [self creatChildViews:screenshotImage];
